@@ -1,0 +1,40 @@
+/* TODO: Put your CSS code in here */
+
+body {
+  background-color: #2c3e50;
+  color: red;
+}
+
+#geocode {
+  margin-top: 4em;
+}
+
+#results {
+  font-family: monospace;
+  font-size: 2em;
+  margin: 2em 0;
+  text-align: center;
+}
+
+#map {
+  width: 100%;
+  height: 70vh;
+}
+
+.acf-map {
+  width: 100%;
+  height: 400px;
+  border: #ccc solid 1px;
+  margin: 20px 0;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.acf-map .location-image {
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-right: 15px;
+}

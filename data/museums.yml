@@ -1,0 +1,19 @@
+louvre:
+  name: Musée du Louvre
+  lat: 48.8606110
+  lng: 2.3376440
+  type: patisseries-cafes
+  address: Rue de Rivoli
+  zipcode: 75001
+  city: Paris
+  comment: Musée extraordinaire. Le plus connu au monde.
+
+orsay:
+  name: Musée d'Orsay
+  lat: 48.8599610
+  lng: 2.3265610
+  type: patisseries-cafes
+  address: 1 Rue de la Légion d'Honneur
+  zipcode: 75007
+  city: Paris
+  comment: Un musée haut en couleurs. Le plus impressionnant sans doute !

@@ -1,0 +1,6 @@
+{
+"museums":[
+    {"name":"Musée du Louvre", "lat":"48.8606110", "lng":"2.3376440"},
+    {"name":"Musée d'Orsay", "lat":"48.8599610", "lng":"2.3265610"}
+]
+}

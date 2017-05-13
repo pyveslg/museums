@@ -2,9 +2,35 @@
 title: Le Wagon Middleman boilerplate
 ---
 
+<!-- Read from data.museums with owner's name as key -->
+<% mus = data.museums %>
+<% museumkey = mus.keys %>
 <div class="welcome text-center padded">
-  <h1>Welcome to Middleman</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p>
+  <h1>Musées de Paris sur carte</h1>
+  <ul style = "list-style: none;">
+      <% museumkey.each do |museum| %>
+      <li><%= mus[museum].name %> | Lat : <%= mus[museum].lat %> | Lng : <%= mus[museum].lng %></li>
+      <% end %>
+  </ul>
+
+  <div id="map"></div>
+  <div class="acf-map">
+
+
+  <div class="acf-map">
+    <% museumkey.each do |museum| %>
+    <div class="marker" data-lat="<%= mus[museum].lat %>" data-lng="<%= mus[museum].lng %>" style="display: none;">
+      <h4><%= mus[museum].name %></h4><br/>
+      <div class="location-image">
+        <img width="200" height="102" src="http://www.luckymiam.com/wp-content/uploads/cocktails-200x102.jpg" class="attachment-tiny size-tiny wp-post-image">
+      </div>
+      <p class="address">
+        <strong><%= mus[museum].address %><br/><%= mus[museum].zipcode %> <%= mus[museum].city %></strong>
+      </p>
+      <br/>
+      <p><em><%= mus[museum].comment %></em></p>
+    </div>
+    <% end %>
 </div>
+
+<script src="https://maps.googleapis.com/maps/api/js"></script>
